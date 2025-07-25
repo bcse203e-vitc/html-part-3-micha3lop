@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Feedback Form</title>
+</head>
+<body background="">
+    <h2>Website Feedback Form</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="rating">Gender</label>
+        <input type="radio" name="rating" id="male" required> Male
+        <input type="radio" name="rating" id="female"> Female
+        <input type="radio" name="rating" id="other"> Other <br><br>
+
+        <label for="height">Height:</label><br>
+        <input type="number" id="height" name="height" required><br><br>
+
+        <label for="weight">Weight:</label><br>
+        <input type="number" id="weight" name="weight" required><br><br>
+        
+        <label>Lifestyle Questions:</label><br>
+        <input type="checkbox" id="smoke" name="lifestyle" value="smoke">
+        <label for="smoke">I smoke</label><br>
+
+        <input type="checkbox" id="drink" name="lifestyle" value="drink">
+        <label for="drink">I drink alcohol</label><br>
+
+        <input type="checkbox" id="exercise" name="lifestyle" value="exercise">
+        <label for="exercise">I exercise regularly</label><br>
+
+        <input type="checkbox" id="diet" name="lifestyle" value="diet">
+        <label for="diet">I follow a healthy diet</label><br><br>
+
+
+        <label for="type">Dietary Preferance:</label><br>
+        <select name="type" id="diet">
+            <option value="" disabled selected>Select one:</option>
+            <option value="veg">Vegetarian</option>
+            <option value="non-veg">Non-Vegetarian</option>
+        </select><br><br>
+
+                <label for="type">Activity Level:</label><br>
+        <select name="type" id="activity">
+            <option value="" disabled selected>Select one:</option>
+            <option value="sedentary">Sedentary</option>
+            <option value="moderate">Moderate</option>
+            <option value="active">Active</option>
+        </select><br><br>
+
+        <label for="optionalconcern">Optional health Concern</label><br>
+        <textarea name="optionalconcern" id="optionalconcern" width="25%" height="10%" required></textarea><br><br>
+
+        <input type="submit" value="Submit" name="submit">
+        <input type="reset" value="reset">
+    </form>
+</body>
+</html>
