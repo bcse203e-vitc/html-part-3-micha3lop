@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Event Registration</title>
+</head>
+<body style="background-color: bisque;">
+    <h1>Registration Form</h1>
+    <form action="/register" method="post">
+        <label for="name">Full Name:<sup style="color: red;">*</sup></label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="mail" id="email" name="email" placeholder="example@domain.com"><br><br>
+
+        <label for="phnumber">Phone Number:<sup style="color: red;">*</sup></label><br>
+        <input type="tel" id="phnumber" name="phnumber" placeholder="xxxxxxxxxx" required><br><br>
+        
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="gender-male" name="gender" value="male">
+        <label for="gender-male">Male</label>
+        <input type="radio" id="gender-female" name="gender" value="female">
+        <label for="gender-female">Female</label>
+        <input type="radio" id="gender-other" name="gender" value="other">
+        <label for="gender-other">Other</label><br><br>
+
+        <label for="agegroup">Age Group<sup style="color: red;">*</sup></label>
+        <select name="agegroup" id="agegroup" required>
+            <option value="" disabled selected>Select Your Group</option>
+            <option value="under18">Under 18</option>
+            <option value="18to25">18 - 25</option>
+            <option value="26to35">26 - 35</option>
+            <option value="36to45">36 - 45</option>
+            <option value="45+">45+</option>
+        </select><br><br>
+
+        <label for="topics">Topic Of Interest</label><br>
+        <input type="checkbox" id="topic-tech" name="topics" value="Technology">
+        <label for="topic-tech">Technology</label><br>
+        <input type="checkbox" id="topic-health" name="topics" value="Health">
+        <label for="topic-health">Health</label><br>
+        <input type="checkbox" id="topic-education" name="topics" value="Education">
+        <label for="topic-education">Education</label><br>
+        <input type="checkbox" id="topic-business" name="topics" value="Business">
+        <label for="topic-business">Business</label><br><br>
+
+        <button type="submit">Register</button>
+
+
+    </form>
+</body>
+</html>
